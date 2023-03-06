@@ -92,8 +92,9 @@ def convert_df(df):
 
 # Load models 
 # Đọc model
-with open('model/KNNmodel.pkl', 'rb') as file:  
-    K_model = pickle.load(file)
+#with open('model/KNNmodel.pkl', 'rb') as file:  
+#    K_model = pickle.load(file)
+
 #------------------------------------------------
 # GUI
 menu = ["Business Objective Overview", "Build RFM Analysis Project", "Predict new customers"]
@@ -197,11 +198,11 @@ elif choice == 'Predict new customers':
             lines = np.array([email])
             flag = True
     
-    if flag:
-        st.write("Content:")
-        if len(lines)>0:
-            st.code(lines)                
-            pre_new = K_model.predict(x_new)       
-            st.code("New predictions (0: Ham, 1: Spam): " + str(y_pred_new))
+    #if flag:
+        #st.write("Content:")
+        #if len(lines)>0:
+            #st.code(lines)                
+            #pre_new = K_model.predict(x_new)       
+            #st.code("New predictions (0: Ham, 1: Spam): " + str(y_pred_new))
     
 
