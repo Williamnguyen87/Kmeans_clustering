@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run LDS0_Nhom8_Project3_RFM_Clustering.py
