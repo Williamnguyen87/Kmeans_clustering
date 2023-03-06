@@ -9,6 +9,5 @@ plotly
 feature_engine
 streamlit_yellowbrick==0.0.3
 yellowbrick
-io
 plotly.express
 squarify
